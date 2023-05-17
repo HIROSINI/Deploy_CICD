@@ -1,0 +1,134 @@
+#root, html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	box-sizing: border-box;
+}
+	
+.app {
+	height: 100%;
+	background-color: rgb(31, 5, 56);
+	background-image: linear-gradient(rgb(31, 5, 56),purple);
+	/* background-image: url('https://j.gifs.com/mwryBn@large.gif?download=true'); */
+	background-image: url('https://wallpaperaccess.com/full/2641053.gif');
+	/* background-image: url('https://static.vecteezy.com/system/resources/previews/013/720/615/non_2x/quote-speech-bubble-blank-frame-templates-isolated-textbox-citation-empty-speech-bubble-yellow-color-background-rectangle-shape-social-media-template-web-banner-copy-space-memo-reminder-note-free-vector.jpg'); */
+	background-size: 1500px 900px;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.rec
+{
+	color: rgb(89, 15, 139);
+	margin-left: -200px;
+	height: 60px;
+	width: 300px;
+	background-color: plum;
+}
+.tri
+{
+	width: 0;
+	height: 0;
+	border-top: 60px solid transparent;
+	border-left: 120px solid plum;
+	border-bottom: 60px solid transparent;
+}
+	
+.card {
+	font-size: 13px;
+	background: rgb(209, 95, 209);
+	width: 30%;
+	height: 30%;
+	display: flex;
+	align-items: center;
+	margin-left: 100px;
+	flex-direction: column;
+	border-radius: 75px;
+	padding: 2%;
+	box-shadow: 10px 10px rgb(4, 4, 79);
+	animation: neon .08s ease-in-out infinite alternate;
+}
+	
+.heading {
+	display: flex;
+	align-items: center;
+	height: 350px;
+	color: rgb(5, 0, 139);
+	font-family: cursive;
+	font-style: italic;
+}
+	
+.button {
+	position: relative;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	height: 200px;
+	width: 210px;
+	/* opacity: 1; */
+	background-color: lavenderblush;
+	border: 1px solid rgba(64, 8, 75, 0.6);
+}
+	
+.button span {
+	color: darkmagenta;
+	font-size: 20px;
+	font-weight: 500;
+	font-weight: bolder;
+}
+
+.card {
+	/* font-size: 80px; */
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes blink{
+	0%{opacity: 0;}
+	50%{opacity: .5;}
+	100%{opacity: 1;}
+	}
+
+  .button{
+	  text-decoration: blink;
+	  animation-name: blink;
+	  animation-duration: 0.5s;
+	  animation-iteration-count:infinite;
+	  animation-timing-function:ease-in-out;
+	  animation-direction: alternate;
+  }
+  
+ .card{
+    color: #c6e2ff;
+	text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+	}
+
+
+@media only screen and (max-width: 1007px) {
+	.card {
+		width: 60%;
+		height: 30%;
+	}
+}
+	
+@media only screen and (max-width: 600px) {
+	.card {
+		width: 80%;
+		height: 40%;
+	}
+}
